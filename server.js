@@ -51,7 +51,7 @@ server.get('/api', (req, res) => {
  * Run Server
  *******************************************************************/
 
- server.listen(PORT, () => {
+ server.listen(process.env.PORT || PORT, () => {
 
     console.log('============ Crypto Pricing Service is now live ============');
 
